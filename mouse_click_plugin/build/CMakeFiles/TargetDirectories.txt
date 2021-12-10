@@ -1,0 +1,3 @@
+/home/vtl/catkin_ws/src/husky/mouse_click_plugin/build/CMakeFiles/rebuild_cache.dir
+/home/vtl/catkin_ws/src/husky/mouse_click_plugin/build/CMakeFiles/system_gui.dir
+/home/vtl/catkin_ws/src/husky/mouse_click_plugin/build/CMakeFiles/edit_cache.dir

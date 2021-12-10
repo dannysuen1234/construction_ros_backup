@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="wheel_borrow">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0786513568600749 0.148749926121572 0.254851548632769"
+        rpy="0 0 0" />
+      <mass
+        value="0.0516484551037589" />
+      <inertia
+        ixx="0.000142916401153761"
+        ixy="-6.30730599393341E-10"
+        ixz="-1.5778674667246E-09"
+        iyy="0.000187090863956827"
+        iyz="7.77391759053492E-06"
+        izz="7.42743287984559E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wheel_borrow/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wheel_borrow/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+</gazebo>
+</robot>

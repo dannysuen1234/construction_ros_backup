@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="floor_feature_6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.297086071156404 -0.0612674051757406 0.00918161566269365"
+        rpy="0 0 0" />
+      <mass
+        value="0.771159806213765" />
+      <inertia
+        ixx="0.00101554196993618"
+        ixy="-5.84699950687701E-05"
+        ixz="0.000213722740154689"
+        iyy="0.0114955782088106"
+        iyz="2.07380885622253E-05"
+        izz="0.0124298293079652" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://floor_feature_6/meshes/base_link.STL" scale="20 35 30"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://floor_feature_6/meshes/base_link.STL" scale="20 35 30"/>
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference = 'base_link'>
+<material> Gazebo/Sand_Floor </material>
+</gazebo>
+
+
+<gazebo>
+<static> true </static>
+</gazebo>
+
+
+</robot>

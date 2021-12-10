@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="sink-2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.775023994608263 0.338190415590541 0.268124853799847"
+        rpy="0 0 0" />
+      <mass
+        value="473.586390476969" />
+      <inertia
+        ixx="41.3218530700884"
+        ixy="-0.00234058731897911"
+        ixz="-0.00600193868491525"
+        iyy="119.848789051516"
+        iyz="-5.90420072265656"
+        izz="122.333961171473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sink-2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.811764705882353 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sink-2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+<gazebo reference="base_link">
+    <material>Gazebo/Grey</material>
+</gazebo>
+
+</robot>

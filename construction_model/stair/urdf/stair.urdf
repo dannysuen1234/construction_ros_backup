@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="stair">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.01671558781256 0.23 0.792966335466938"
+        rpy="0 0 0" />
+      <mass
+        value="515.2782" />
+      <inertia
+        ixx="125.747298835435"
+        ixy="1.99671415523879E-15"
+        ixz="116.529850798384"
+        iyy="395.511916412231"
+        iyz="-5.18284539451474E-15"
+        izz="287.936762096796" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://stair/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="224 223 219 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://stair/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference="base_link">
+    <material>Gazebo/DarkGrey</material>
+</gazebo>
+
+</robot>

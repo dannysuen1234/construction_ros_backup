@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="storage_box">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.601601125386072 0.3 0.256301369863014"
+        rpy="0 0 0" />
+      <mass
+        value="70.08" />
+      <inertia
+        ixx="6.3278733150685"
+        ixy="1.00906676555969E-14"
+        ixz="-0.00714742372342245"
+        iyy="13.2287601930154"
+        iyz="8.19745104616631E-16"
+        izz="14.0158948779469" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://storage_box/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://storage_box/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference ='base_link'>
+<material>cement </material>
+</gazebo>
+
+<gazebo>
+    <static>true</static>
+</gazebo>
+</robot>

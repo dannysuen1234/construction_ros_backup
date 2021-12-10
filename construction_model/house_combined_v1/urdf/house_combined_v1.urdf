@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="house_combined_v1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.05 2.16525520407071 1.5"
+        rpy="0 0 0" />
+      <mass
+        value="43317.9226500504" />
+      <inertia
+        ixx="67695.8094190887"
+        ixy="-7.60679400873056E-11"
+        ixz="2.63114731597808E-12"
+        iyy="325460.745406259"
+        iyz="3.51057142529777E-12"
+        izz="314958.41530629" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://house_combined_v1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://house_combined_v1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="window1">
+    <inertial>
+      <origin
+        xyz="1.675 0.100000000000001 1.3"
+        rpy="0 0 0" />
+      <mass
+        value="1742" />
+      <inertia
+        ixx="987.133333333334"
+        ixy="-3.59046126163816E-15"
+        ixz="-1.24332766304747E-13"
+        iyy="2610.45958333334"
+        iyz="-7.6864440738204E-16"
+        izz="1634.93958333333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://house_combined_v1/meshes/window1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://house_combined_v1/meshes/window1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="window1_joint"
+    type="fixed">
+    <origin
+      xyz="0.700000000000023 0.700000000000029 0.2"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="window1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="window2">
+    <inertial>
+      <origin
+        xyz="-1.675 0.0999999999999996 1.3"
+        rpy="0 0 0" />
+      <mass
+        value="1742" />
+      <inertia
+        ixx="987.133333333334"
+        ixy="3.71850698381133E-15"
+        ixz="1.45531734811282E-14"
+        iyy="2610.45958333334"
+        iyz="-7.68644407382278E-16"
+        izz="1634.93958333333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://house_combined_v1/meshes/window2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://house_combined_v1/meshes/window2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="window2_joint"
+    type="fixed">
+    <origin
+      xyz="7.4 0.7 0.199999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="window2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+<gazebo>
+    <static>true</static>
+</gazebo>
+
+</robot>

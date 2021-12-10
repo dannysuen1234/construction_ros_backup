@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="wood_table">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.4725 0.2975 0.643700483091788"
+        rpy="0 0 0" />
+      <mass
+        value="51.7715625" />
+      <inertia
+        ixx="5.46620096137385"
+        ixy="1.31611301718015E-15"
+        ixz="-4.57663619819979E-15"
+        iyy="9.52289101365251"
+        iyz="3.00370224407338E-16"
+        izz="8.88029905227865" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wood_table/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wood_table/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference="base_link">
+    <material>Gazebo/Wood</material>
+</gazebo>
+
+<gazebo>
+    <static>true</static>
+</gazebo>
+
+</robot>
