@@ -1,33 +1,21 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='cupboard'>
+  <model name='work_brench'>
 <link name='link'>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <visual name='link'>
         <geometry>
 <mesh>
-<uri>model://cupboard/meshes/base_link.STL </uri>
+<uri>model://cupboard/meshes/cupboard.dae </uri>
 <scale>1 1 1</scale>
 
 </mesh>
 
 
         </geometry>
-        <material>
-          <script>
+  
 
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name></name>
-
-
-
-          </script>
-          <ambient>1 1 1 1</ambient>
-          <diffuse>1 1 1 1</diffuse>
-          <specular>1 1 1 1</specular>
-          <emissive>0.2 0.2 0.2 1</emissive>
-        </material>
         <cast_shadows>1</cast_shadows>
         <transparency>0</transparency>
       </visual>
@@ -37,7 +25,7 @@
         <geometry>
 
 <mesh>
-<uri>model://cupboard/meshes/base_link.STL </uri>
+<uri>model://cupboard/meshes/cupboard.dae </uri>
 <scale>1 1 1</scale>
 </mesh>
 
