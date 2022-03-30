@@ -17,10 +17,10 @@ move_base_package = 'husky_gazebo '
 move_base_launch = 'construction_move_base.launch'
 rviz_package = 'husky_viz ' 
 rviz_launch = 'nav.launch'
-map_path_pmg = "/home/ros-dev/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_before_edit.pgm"
-map_path_yaml = '/home/ros-dev/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_before_edit.yaml'
-good_map_path_yaml = '/home/ros-dev/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_after_edit.yaml'
-save_map_path = '/home/ros-dev/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_before_edit'
+map_path_pmg = "/home/vtl/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_before_edit.pgm"
+map_path_yaml = '/home/vtl/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_before_edit.yaml'
+good_map_path_yaml = '/home/vtl/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_after_edit.yaml'
+save_map_path = '/home/vtl/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_map_before_edit'
 
 def listener():
 
@@ -70,7 +70,7 @@ point_2 = '''rostopic pub -1 /move_base_simple/goal geometry_msgs/PoseStamped "h
   frame_id: "map"
 pose: 
   position: 
-    x: 6.5
+    x: 6
     y: -4
     z: 0.0
   orientation: 
@@ -169,7 +169,7 @@ def t1_click (event):
 	t1_thread.start()
 
 def btn_stop(event):
-	cmd = "pkill roslaunch"
+	cmd = "pkill -f ros"
 	x = threading.Thread(target = linux_command, args=cmd)
 	x.start()
 
@@ -233,7 +233,7 @@ def bad_map_btn(event):
 	print(cmd)
 
 def pre_map_btn(event):
-	cmd = 'rosrun map_server map_server /home/ros-dev/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_predefined_map.yaml'
+	cmd = 'rosrun map_server map_server /home/vtl/catkin_ws/src/husky/construction_ros_backup/husky_navigation/maps/construction_predefined_map.yaml'
 	pre_map = threading.Thread(target = linux_command, args = cmd)
 	pre_map.start()
 	print(cmd)

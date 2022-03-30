@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>script</name>
+  <version>0.4.10</version>
+  <description>Metapackage for Clearpath Husky robot software</description>
+
+  <maintainer email="dannysuen9@gmail.com">Danny Suen</maintainer>
+
+  <license>BSD</license>
+
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
